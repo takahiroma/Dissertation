@@ -1,0 +1,29 @@
+\begin{table}[h]
+\caption{Elasticity of Demand w.r.t Uber's Trips and Wait Time (N=10,000)}\label{tab:robust_uber_10000}\\
+
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{center}
+\begin{tabular}{l*{2}{c}}
+\hline\hline
+            &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}\\
+             &\multicolumn{1}{c}{\textit{log (Waiting Passengers)}}&\multicolumn{1}{c}{\textit{log (Waiting Passengers)}}\\
+\hline
+${\widehat{log\, (Uber\,Trip)}}$  &      -0.168\sym{***}&      -0.165\sym{***}\\
+            &    (0.0187)         &    (0.0186)         \\
+[1em]
+${\widehat{log\, (Wait\, Time)}}$&      -0.297\sym{**}&      -0.266\sym{**} \\
+            &    (0.0854)         &    (0.0850)         \\
+\hline
+\(N\)       &       55,277         &       55,277         \\
+\(R^{2}\)   &       0.243         &       0.253         \\
+Public Transportation Effect &         No            &             Yes        \\
+\hline\hline
+\multicolumn{3}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{3}{l}{\footnotesize \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\end{tabular}
+\end{center}
+}
+
+
+\end{table}

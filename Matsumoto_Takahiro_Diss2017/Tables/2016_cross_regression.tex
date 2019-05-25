@@ -1,0 +1,47 @@
+\begin{table}[h]
+\caption{Elasticity of year being 2016 with cross term}\label{tab:2016_regression}\\
+
+
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{center}
+\begin{tabular}{l*{2}{cc}}
+\hline\hline
+            &\multicolumn{2}{c}{(1)}           &\multicolumn{2}{c}{(2)}           \\
+        
+\hline
+\textit{year=2016}    &      -0.185\sym{*}  &    (0.0735)&       0.222\sym{**} &    (0.0774)\\
+${\widehat{log\, (Wait\, Time)}}$&      -0.709\sym{***}&    (0.0828)&      -0.655\sym{***}&    (0.0824)\\
+\textit{Pickup\, Upper West Side}&       0.648\sym{***}&    (0.0577)&       0.144\sym{*}  &    (0.0611)\\
+\textit{Pickup\, Upper East Side}&       0.946\sym{***}&    (0.0621)&       0.580\sym{***}&    (0.0638)\\
+\textit{Pickup\, Hell's Kitchen}&       0.524\sym{***}&    (0.0615)&       0.204\sym{**} &    (0.0633)\\
+\textit{Pickup\, Midtown}&       0.955\sym{***}&    (0.0559)&       0.483\sym{***}&    (0.0591)\\
+\textit{Pickup\, Midtown East}&       1.039\sym{***}&    (0.0564)&       0.608\sym{***}&    (0.0589)\\
+\textit{Pickup\, Greenwich Village}&       0.535\sym{***}&    (0.0726)&       0.215\sym{**} &    (0.0735)\\
+\textit{Pickup\, Little Italy}&       0.604\sym{***}&    (0.0630)&       0.170\sym{**} &    (0.0656)\\
+\textit{Pickup\, East Village}&       0.394\sym{***}&    (0.0594)&      0.0184         &    (0.0612)\\
+\textit{Pickup\, Lower Manhattan}&       0.585\sym{***}&    (0.0687)&      0.0965         &    (0.0714)\\
+\textit{Dropoff\, Upper West Side}&      -0.505\sym{***}&    (0.0586)&      -0.487\sym{***}&    (0.0618)\\
+\textit{Dropoff\, Upper East Side}&      -0.779\sym{***}&    (0.0649)&      -0.741\sym{***}&    (0.0662)\\
+\textit{Dropoff\, Hell's Kitchen}&      -0.358\sym{***}&    (0.0627)&      -0.327\sym{***}&    (0.0642)\\
+\textit{Dropoff\, Midtown}&      -0.806\sym{***}&    (0.0576)&      -0.797\sym{***}&    (0.0607)\\
+\textit{Dropoff\, Midtown East}&      -0.688\sym{***}&    (0.0575)&      -0.695\sym{***}&    (0.0598)\\
+\textit{Dropoff\, Greenwich Village}&      -0.620\sym{***}&    (0.0741)&      -0.626\sym{***}&    (0.0750)\\
+\textit{Dropoff\, Little Italy}&      -1.048\sym{***}&    (0.0652)&      -1.046\sym{***}&    (0.0677)\\
+\textit{Dropoff\, East Village}&      -0.394\sym{***}&    (0.0604)&      -0.377\sym{***}&    (0.0621)\\
+\textit{Dropoff\, Lower Manhattan}&      -1.336\sym{***}&    (0.0674)&      -1.337\sym{***}&    (0.0697)\\
+\hline
+\(N\)       &       55,244         &            &       55,244         &            \\
+\(R^{2}\)   &       0.208         &            &       0.217 &            \\
+Public Transportation Effect &     No               &            &               Yes      &            \\
+\hline\hline
+\multicolumn{5}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{5}{l}{\footnotesize \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\multicolumn{5}{l}{\footnotesize Each \textit{pickup/dropoff} variables shown in the table are multiplied by dummy variable \textit{year=2016}}\\
+\end{tabular}
+\end{center}
+}
+
+
+\end{table}
+

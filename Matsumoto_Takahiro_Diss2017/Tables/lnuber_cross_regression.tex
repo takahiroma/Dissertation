@@ -1,0 +1,51 @@
+\begin{table}[h]
+\caption{Elasticity of Demand w.r.t Uber's Trips with Cross Terms}\label{tab:lnuber_cross_regression}\\
+
+
+
+
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{center}
+\begin{tabular}{l*{2}{cc}}
+\hline\hline
+            &\multicolumn{2}{c}{(1)}           &\multicolumn{2}{c}{(2)}           \\
+
+\hline
+${\widehat{log\, (Uber\,Trip)}}$  &      -0.265\sym{***}&    (0.0193)&      -0.226\sym{***}&    (0.0195)\\
+${\widehat{log\, (Wait\, Time)}}$&      -0.183\sym{*}  &    (0.0726)&      -0.240\sym{***}&    (0.0725)\\
+\hspace{3cm}\textit{Pickup\,Upper West Side}&       0.182\sym{***}&   (0.00695)&       0.134\sym{***}&   (0.00815)\\
+\hspace{3cm}\textit{Pickup\,Upper East Side}&       0.223\sym{***}&   (0.00704)&       0.194\sym{***}&   (0.00773)\\
+\hspace{3cm}\textit{Pickup\,Hell's Kitchen}&       0.148\sym{***}&   (0.00687)&       0.130\sym{***}&   (0.00749)\\
+\hspace{3cm}\textit{Pickup\,Midtown}&       0.219\sym{***}&   (0.00609)&       0.184\sym{***}&   (0.00707)\\
+\hspace{3cm}\textit{Pickup\,Midtown East}&       0.243\sym{***}&   (0.00625)&       0.217\sym{***}&   (0.00719)\\
+\hspace{3cm}\textit{Pickup\,Greenwich Village}&       0.152\sym{***}&   (0.00816)&       0.126\sym{***}&   (0.00855)\\
+\hspace{3cm}\textit{Pickup\,Little Italy}&       0.175\sym{***}&   (0.00718)&       0.135\sym{***}&   (0.00797)\\
+\hspace{3cm}\textit{Pickup\,East Village}&       0.133\sym{***}&   (0.00691)&       0.101\sym{***}&   (0.00763)\\
+\hspace{3cm}\textit{Pickup\,Lower Manhattan}&       0.143\sym{***}&   (0.00830)&       0.102\sym{***}&   (0.00915)\\
+\hspace{3cm}\textit{Dropoff\,Upper West Side}&     -0.0393\sym{***}&   (0.00648)&     -0.0580\sym{***}&   (0.00718)\\
+\hspace{3cm}\textit{Dropoff\,Upper East Side}&     -0.0879\sym{***}&   (0.00756)&     -0.0965\sym{***}&   (0.00783)\\
+\hspace{3cm}\textit{Dropoff\,Hells Kitchen}&     -0.0239\sym{***}&   (0.00698)&     -0.0302\sym{***}&   (0.00730)\\
+\hspace{3cm}\textit{Dropoff\,Midtown}&     -0.0914\sym{***}&   (0.00639)&      -0.106\sym{***}&   (0.00712)\\
+\hspace{3cm}\textit{Dropoff\,Midtown East}&     -0.0724\sym{***}&   (0.00631)&     -0.0799\sym{***}&   (0.00685)\\
+\hspace{3cm}\textit{Dropoff\,Greenwich Village}&     -0.0618\sym{***}&   (0.00831)&     -0.0746\sym{***}&   (0.00852)\\
+\hspace{3cm}\textit{Dropoff\,Little Italy}&      -0.130\sym{***}&   (0.00732)&      -0.151\sym{***}&   (0.00788)\\
+\hspace{3cm}\textit{Dropoff\,East Village}&     -0.0135\sym{*}  &   (0.00672)&     -0.0263\sym{***}&   (0.00708)\\
+\hspace{3cm}\textit{Dropoff\,Lower Manhattan}&      -0.181\sym{***}&   (0.00753)&      -0.201\sym{***}&   (0.00805)\\
+\hline
+\(N\)       &       55,243         &            &       55,243         &            \\
+\(R^{2}\)   &       0.244         &            &       0.247         &            \\
+Public Transportation Effect &       No            
+               & &    Yes                 \\
+\hline\hline
+\multicolumn{5}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{5}{l}{\footnotesize \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\multicolumn{5}{l}{\footnotesize Each \textit{pickup/dropoff} variables shown in the table are multiplied by ${\widehat{log\, (Uber\,Trip)}}$}\\
+\end{tabular}
+\end{center}
+}
+
+
+
+\end{table}
+
